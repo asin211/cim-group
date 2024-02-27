@@ -1,0 +1,30 @@
+.outer-container{
+    display: flex;
+    margin-top: 10px;
+}
+
+.container{
+    display: flex;
+    margin-top: 10px;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --main-color: #0b0b0b
+}
+
+@mixin tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
